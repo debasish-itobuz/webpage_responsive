@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;700;800&display=swap");
+
+body {
+  background-color: #edede9;
+  font-family: "Work Sans", sans-serif;
+}
+
+#myLinks {
+  display: none;
+  display: none;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  position: absolute;
+  left: 0px;
+  top: 56px;
+  text-align: center;
+  padding-top: 10px;
+  padding: 0;
+}
+
+.hamberger {
+  display: block;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-items {
+  text-align: right;
+  /* height:40px; */
+  z-index: 1;
+}
+
+.nav-items a {
+  display: block;
+  color: white;
+}
+
+.nav-items a.icon {
+  display: block;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+}
+.nav-li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style-type: none;
+}
+.nav-li li {
+  /* margin-left: 20px; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-a,
+.li-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-head {
+  text-wrap: nowrap;
+  font-weight: bold;
+}
+
+.nav-logo {
+  width: 50px;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: grey;
+}
+
+.project-sec1 {
+  /* width: 50%; */
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.project-sec2 {
+  /* width: 50%; */
+}
+
+@media (min-width: 768px) {
+  .hamberger {
+    display: none !important ;
+  }
+
+  #myLinks {
+    display: flex !important ;
+    justify-content: end;
+    align-items: center;
+    box-sizing: border-box;
+    height: auto;
+    width: auto;
+    background: none;
+    position: static;
+    right: 0px;
+    top: 24px;
+    padding-top: 10px;
+    padding: 0;
+  }
+
+  .nav-items a {
+    color: black;
+    font-weight: bold;
+  }
+
+  .hero {
+    flex-direction: row;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-sec1 {
+    width: 50%;
+    
+  }
+  
+  .project-sec2 {
+    width: 50%;
+  }
+}
