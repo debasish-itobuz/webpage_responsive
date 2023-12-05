@@ -1,8 +1,9 @@
+const myLinks = document.getElementById("myLinks")
+
 function myFunction() {
-    let x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    if (myLinks.style.display === "block") {
+      myLinks.style.display = "none";
     } else {
-      x.style.display = "block";
+      myLinks.style.display = "block";
     }
   }
