@@ -5,21 +5,6 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-#myLinks {
-  display: none;
-  display: none;
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
-  background: black;
-  position: absolute;
-  left: 0px;
-  top: 56px;
-  text-align: center;
-  padding-top: 10px;
-  padding: 0;
-}
-
 .hamberger {
   display: block;
 }
@@ -51,6 +36,9 @@ h1 {
 .nav-items a {
   display: block;
   color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
 }
 
 .nav-items a.icon {
@@ -65,13 +53,18 @@ h1 {
   list-style-type: none;
 }
 .nav-li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  gap: 20px;
   list-style-type: none;
-}
-.nav-li li {
-  /* margin-left: 20px; */
+  display: none;
+  box-sizing: border-box;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0px;
+  top: 56px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 a {
@@ -141,14 +134,9 @@ p {
 }
 
 .project-sec1 {
-  /* width: 50%; */
   font-size: 1.2rem;
   padding: 10px;
   font-weight: 100;
-}
-
-.project-sec2 {
-  /* width: 50%; */
 }
 
 @media (min-width: 768px) {
@@ -156,7 +144,7 @@ p {
     display: none !important ;
   }
 
-  #myLinks {
+  .nav-li {
     display: flex !important ;
     justify-content: end;
     align-items: center;
@@ -187,9 +175,8 @@ p {
 
   .project-sec1 {
     width: 50%;
-    
   }
-  
+
   .project-sec2 {
     width: 50%;
   }
